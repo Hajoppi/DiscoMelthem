@@ -111,7 +111,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 348b48392cea62e4896508e7c819717a, type: 2}
 --- !u!1 &48802760
 GameObject:
   m_ObjectHideFlags: 0
@@ -445,6 +445,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graphics: {fileID: 590669064}
   tileMaterial: {fileID: 2100000, guid: c84a74c2ce3956743ab07ec4cd6ab53c, type: 2}
+  heat: 0
 --- !u!1 &1027735925
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,6 +689,38 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: d01d0047fc8ceb1409ce044d4a3ec599, type: 3}
       propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: d01d0047fc8ceb1409ce044d4a3ec599, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d01d0047fc8ceb1409ce044d4a3ec599, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: d01d0047fc8ceb1409ce044d4a3ec599, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: d01d0047fc8ceb1409ce044d4a3ec599, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: d01d0047fc8ceb1409ce044d4a3ec599, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: d01d0047fc8ceb1409ce044d4a3ec599, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d01d0047fc8ceb1409ce044d4a3ec599, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: d01d0047fc8ceb1409ce044d4a3ec599, type: 3}
+      propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

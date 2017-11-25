@@ -29,7 +29,7 @@ public class GenerateDanceFloor : MonoBehaviour
                 float z = graphics.transform.position.z;
                 Vector3 pos = new Vector3(x + -i * 0.5f, 0f, x + -j * 0.5f);
                 cube.transform.position = pos;
-                cube.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+                cube.transform.localScale = new Vector3(0.5f, 0.01f, 0.5f);
                 cube.transform.SetParent(graphics.transform, true);
                 tiles.Add(cube);
             }
