@@ -43,24 +43,14 @@ public class EquipmentBehavior : VRTK_InteractableObject
             if (prevControllerZ != 0)
             {
                 float diff = controllerAngle - prevControllerZ;
-                /*
-                if ( diff > 270 )
-                {
-                    diff = 270;
-                }
-                else if (diff < 90)
-                {
-                    diff = 90;
-                }
-                */
+
                 rotator.Rotate(new Vector3(diff, 0f, 0f));
                 if (score.currentlyActive)
                 {
-                    
                     ScoreManager scoreManager = GameObject.FindWithTag("scoreManager").GetComponent<ScoreManager>();
                     scoreManager.AddScore(score.scoreValue);
-                    print(scoreManager.GetScore());
                     score.DeactivateEquipment();
+                    score.currentlyActive = false;
                 }
             }
             prevControllerZ = controllerAngle;

@@ -34,7 +34,9 @@ public class EquipmentScore : MonoBehaviour {
     {
         SetValue(value);
         SetActive(activeTime);
-        SetAlpha(.5f);
+        SetAlpha(.8f);
+        Color emissionColor = Color.yellow;
+        renderer.material.EnableKeyword("_EMISSION");
         ChangeLight();
     }
 
@@ -42,6 +44,7 @@ public class EquipmentScore : MonoBehaviour {
     {
         SetValue(0);
         SetAlpha(0f);
+        renderer.material.DisableKeyword("_EMISSION");
     }
 
     int GetValue ()

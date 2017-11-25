@@ -3,34 +3,42 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Dancer : MonoBehaviour {
-    private int excitement = 0;
+    private float heat = 0;
     Animator animator;
     Vector3 barLocation = new Vector3(-2, 0, -4);
     Vector3 danceFloorLocation = new Vector3(0.5f, 0, 1.5f);
     UnityEngine.AI.NavMeshAgent nav;
-    int offset = 1;
+    float offset = 0.05f;
     // Use this for initialization
     void Start () {
         nav = GetComponent<UnityEngine.AI.NavMeshAgent>();
-        InvokeRepeating("Adder", 1, 1);
         animator = GetComponentInChildren<Animator>();
         if(animator != null)
         {
             animator.SetBool("walking", true);
         }
 	}
-	void Adder()
+	public void Adder()
     {
-        excitement += offset;
-        if (excitement > 20)
+        heat += offset;
+        if (heat > 1.5f)
         {
-            offset = -1;
+            heat = 1.5f;
+        }
+    }
+
+    public void Reducer()
+    {
+        heat -= 2 * offset;
+        if (heat < 0f)
+        {
+            heat = 0f;
         }
     }
     // Update is called once per frame
     void Update()
     {
-        if (excitement < 10)
+        if (heat <= 0.2f)
         {
             if(Vector3.Distance(this.transform.position, barLocation) < 1)
             {
@@ -53,17 +61,16 @@ public class Dancer : MonoBehaviour {
             }
 
         }
-        else if (excitement > 10)
+        else if (heat > 0.2f)
         {
-            if(Vector3.Distance(this.transform.position, danceFloorLocation) < 2) {
+            if(Vector3.Distance(this.transform.position, danceFloorLocation) < 3) {
                 nav.isStopped = true;
                 if (animator != null)
                 {
                     animator.SetBool("Frozen", false);
                     animator.SetBool("walking", false);
                     animator.SetBool("dancing", true);
-                    float heat = animator.GetFloat("Heat");
-                    animator.SetFloat("Heat", heat + 0.001f);
+                    animator.SetFloat("Heat", heat);
                 }
 
             }

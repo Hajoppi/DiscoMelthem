@@ -7,10 +7,14 @@ public class ScoreManager : MonoBehaviour {
 
     int score;
     public Text scoreText;
+    public GameObject dancerManagerObject;
+    DancerManager dancerManager;
 
 	// Use this for initialization
 	void Awake () {
-        score = 10;
+        score = 0;
+        dancerManager = dancerManagerObject.GetComponent<DancerManager>();
+
     }
 	
 	// Update is called once per frame
@@ -30,8 +34,9 @@ public class ScoreManager : MonoBehaviour {
 
     public void AddScore (int amount)
     {
-        print(amount + "  " + score);
         SetScore(amount + score);
+        dancerManager.Add();
+        dancerManager.IncreaseHeat();
     }
 
     public void ReduceScore (int amount)
@@ -44,6 +49,7 @@ public class ScoreManager : MonoBehaviour {
         {
             SetScore(score - amount);
         }
+        dancerManager.DecreaseHeat();
     }
 
 
