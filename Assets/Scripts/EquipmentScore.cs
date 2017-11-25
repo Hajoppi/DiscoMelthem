@@ -65,7 +65,7 @@ public class EquipmentScore : MonoBehaviour {
         float colorChangeBlue = Random.Range(0f, 1f); ;
         float colorChangeGreen = Random.Range(0f, 1f); ;
         Color current = lightObject.GetComponent<Light>().color;
-        print(lightObject.GetComponent<Light>());
+        //print(lightObject.GetComponent<Light>());
         if (current != null)
         {
             Color newColor = new Color(colorChangeRed, colorChangeGreen, colorChangeBlue);

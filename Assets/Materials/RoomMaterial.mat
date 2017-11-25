@@ -68,6 +68,7 @@ Material:
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _GlowPower: 1
+    - _GradientPower: 0
     - _Heat: 0
     - _Metallic: 0
     - _Mode: 0
@@ -77,10 +78,12 @@ Material:
     - _SpecPower: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _TileSelect: 3
     - _UVSec: 0
+    - _UseTiles: 0
     - _ZWrite: 1
     m_Colors:
-    - _ColdColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _ColdColor: {r: 0.024059242, g: 0.21099137, b: 0.6544118, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _HotColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _HotColor: {r: 0.52205884, g: 0.47758326, b: 0.1189987, a: 1}

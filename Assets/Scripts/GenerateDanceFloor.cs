@@ -43,8 +43,8 @@ public class GenerateDanceFloor : MonoBehaviour
         foreach (GameObject tile in tiles)
         {
             Material m = tile.GetComponent<MeshRenderer>().material;
-            m.SetColor("_HotColor", new Color((float)rand.NextDouble(), (float)rand.NextDouble(), (float)rand.NextDouble()));
-            m.SetColor("_ColdColor", new Color((float)rand.NextDouble(), (float)rand.NextDouble(), (float)rand.NextDouble()));
+            m.SetColor("_HotColor", new Color((float)rand.NextDouble()+0.1f, (float)rand.NextDouble()/1.1f, (float)rand.NextDouble() / 1.1f));
+            m.SetColor("_ColdColor", new Color((float)rand.NextDouble() / 1.4f, (float)rand.NextDouble()+0.2f, (float)rand.NextDouble()+0.3f));
         }
     }
     // Update is called once per frame
