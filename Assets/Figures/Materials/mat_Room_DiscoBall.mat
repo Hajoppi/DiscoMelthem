@@ -18,6 +18,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _BasicTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -35,7 +39,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DiscoMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 8900000, guid: 3b2b758c3d3f186449a278b8612c2c54, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
@@ -77,7 +81,8 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _ColdColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _ColdColor: {r: 0.21323532, g: 0.34888443, b: 1, a: 1}
     - _Color: {r: 0.8, g: 0.8, b: 0.8, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
-    - _HotColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _HeatColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _HotColor: {r: 1, g: 0, b: 0, a: 1}

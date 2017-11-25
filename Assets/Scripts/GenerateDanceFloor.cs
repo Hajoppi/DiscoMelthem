@@ -14,6 +14,8 @@ public class GenerateDanceFloor : MonoBehaviour
     private float nextTime = 0.0f;
     System.Random rand = new System.Random();
     // Use this for initialization
+    /*
+     * */
     void Start()
     {
         for (int i = 0; i < 12; i++)

@@ -35,12 +35,27 @@ public class EquipmentBehavior : VRTK_InteractableObject
     protected override void Update()
     {
         base.Update();
+
+        float colorChangeRed = 0;
+        float colorChangeBlue = 0;
+        float colorChangeGreen = 0;
+
         if (isBeingTouched)
         {
             float controllerAngle = usingObject.transform.rotation.eulerAngles.z;
             if (prevControllerZ != 0)
             {
                 float diff = controllerAngle - prevControllerZ;
+
+                if ( diff > 270 )
+                {
+                    diff = 270;
+                }
+                else if (diff < 90)
+                {
+                    diff = 90;
+                }
+
                 rotator.Rotate(new Vector3(diff, 0f, 0f));
                 if (score.currentlyActive)
                 {
