@@ -23,12 +23,18 @@ public class ScoreManager : MonoBehaviour {
         score = newScore;
     }
 
-    void AddScore (int amount)
+    public int GetScore()
     {
+        return score;
+    }
+
+    public void AddScore (int amount)
+    {
+        print(amount + "  " + score);
         SetScore(amount + score);
     }
 
-    void ReduceScore (int amount)
+    public void ReduceScore (int amount)
     {
         int newScore = score - amount;
         if (newScore < 0)
