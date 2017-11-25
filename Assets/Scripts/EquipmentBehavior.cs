@@ -8,14 +8,14 @@ public class EquipmentBehavior : VRTK_InteractableObject
     Transform rotator;
     bool isBeingTouched;
     float prevControllerZ;
-    GameObject EquipmentGameObject;
+    public GameObject EquipmentGameObject;
+    public EquipmentScore score;
 
     public override void StartUsing(VRTK_InteractUse usingObject)
     {
         base.StartUsing(usingObject);
         spinSpeed = 360f;
         isBeingTouched = true;
-        EquipmentGameObject = transform.parent.gameObject;
     }
 
     public override void StopUsing(VRTK_InteractUse usingObject)
@@ -27,7 +27,7 @@ public class EquipmentBehavior : VRTK_InteractableObject
 
     protected void Start()
     {
-        rotator = transform.parent;
+        rotator = EquipmentGameObject.transform;
         isBeingTouched = false;
         prevControllerZ = 0;
     }
@@ -41,8 +41,7 @@ public class EquipmentBehavior : VRTK_InteractableObject
             if (prevControllerZ != 0)
             {
                 float diff = controllerAngle - prevControllerZ;
-                rotator.Rotate(new Vector3(0f, 0f, diff));
-                EquipmentScore score = EquipmentGameObject.GetComponent<EquipmentScore>();
+                rotator.Rotate(new Vector3(diff, 0f, 0f));
                 if (score.currentlyActive)
                 {
                     
