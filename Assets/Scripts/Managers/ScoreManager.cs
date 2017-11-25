@@ -8,13 +8,21 @@ public class ScoreManager : MonoBehaviour {
     int score;
     public Text scoreText;
     public GameObject dancerManagerObject;
+    public GameObject danceFloorObject;
+    public GameObject[] room;
+    List<Material> decorations = new List<Material>();
+    GenerateDanceFloor danceFloor;
     DancerManager dancerManager;
 
 	// Use this for initialization
 	void Awake () {
         score = 0;
+        danceFloor = danceFloorObject.GetComponent<GenerateDanceFloor>();
         dancerManager = dancerManagerObject.GetComponent<DancerManager>();
-
+        foreach (GameObject deco in room)
+        {
+            decorations.Add(deco.GetComponent<MeshRenderer>().material);
+        }
     }
 	
 	// Update is called once per frame
@@ -37,6 +45,16 @@ public class ScoreManager : MonoBehaviour {
         SetScore(amount + score);
         dancerManager.Add();
         dancerManager.IncreaseHeat();
+        danceFloor.heat += 0.1f;
+        foreach (Material m in decorations)
+        {
+            m.SetFloat("_Heat", m.GetFloat("_Heat") + 0.1f);
+        }
+
+        if (danceFloor.heat > 1f)
+        {
+            danceFloor.heat = 1f;
+        }
     }
 
     public void ReduceScore (int amount)
@@ -50,6 +68,16 @@ public class ScoreManager : MonoBehaviour {
             SetScore(score - amount);
         }
         dancerManager.DecreaseHeat();
+        danceFloor.heat -= 0.1f;
+        print(decorations);
+        foreach (Material m in decorations)
+        {
+            m.SetFloat("_Heat", m.GetFloat("_Heat") - 0.1f);
+        }
+        if (danceFloor.heat < 0)
+        {
+            danceFloor.heat = 0;
+        }
     }
 
 
