@@ -22,7 +22,7 @@ public class ScoreManager : MonoBehaviour {
         scoreText.text = "Score: " + score;
 	}
 
-    void SetScore(int newScore)
+    public void SetScore(int newScore)
     {
         score = newScore;
     }
