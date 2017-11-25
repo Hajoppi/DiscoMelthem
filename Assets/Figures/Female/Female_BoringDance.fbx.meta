@@ -1,0 +1,192 @@
+fileFormatVersion: 2
+guid: e2b8a94580bf0b948a08d61c6e4a253d
+timeCreated: 1511619258
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Female_base:back
+    100002: Female_base:Base
+    100004: Female_base:chest
+    100006: Female_base:Female
+    100008: Female_base:Head
+    100010: Female_base:hips
+    100012: Female_base:joint10
+    100014: Female_base:joint11
+    100016: Female_base:joint7
+    100018: Female_base:joint8
+    100020: Female_base:joint9
+    100022: Female_base:L_arm
+    100024: Female_base:L_ball
+    100026: Female_base:L_elbow
+    100028: Female_base:L_knee
+    100030: Female_base:L_leg
+    100032: Female_base:L_palm
+    100034: Female_base:L_palmTip
+    100036: Female_base:L_shoulder
+    100038: Female_base:L_toe
+    100040: Female_base:L_ToeTip
+    100042: Female_base:neck
+    100044: Female_base:R_arm
+    100046: Female_base:R_ball
+    100048: Female_base:R_elbow
+    100050: Female_base:R_knee
+    100052: Female_base:R_leg
+    100054: Female_base:R_palm
+    100056: Female_base:R_palmTip
+    100058: Female_base:R_shoulder
+    100060: Female_base:R_toe
+    100062: Female_base:R_ToeTip
+    100064: Female_base:Root
+    100066: //RootNode
+    100068: Female_base:Controls
+    400000: Female_base:back
+    400002: Female_base:Base
+    400004: Female_base:chest
+    400006: Female_base:Female
+    400008: Female_base:Head
+    400010: Female_base:hips
+    400012: Female_base:joint10
+    400014: Female_base:joint11
+    400016: Female_base:joint7
+    400018: Female_base:joint8
+    400020: Female_base:joint9
+    400022: Female_base:L_arm
+    400024: Female_base:L_ball
+    400026: Female_base:L_elbow
+    400028: Female_base:L_knee
+    400030: Female_base:L_leg
+    400032: Female_base:L_palm
+    400034: Female_base:L_palmTip
+    400036: Female_base:L_shoulder
+    400038: Female_base:L_toe
+    400040: Female_base:L_ToeTip
+    400042: Female_base:neck
+    400044: Female_base:R_arm
+    400046: Female_base:R_ball
+    400048: Female_base:R_elbow
+    400050: Female_base:R_knee
+    400052: Female_base:R_leg
+    400054: Female_base:R_palm
+    400056: Female_base:R_palmTip
+    400058: Female_base:R_shoulder
+    400060: Female_base:R_toe
+    400062: Female_base:R_ToeTip
+    400064: Female_base:Root
+    400066: //RootNode
+    400068: Female_base:Controls
+    4300000: Female_base:Female
+    7400000: BoringDance
+    9500000: //RootNode
+    13700000: Female_base:Female
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Female_base_mat_Humans3
+    second: {fileID: 2100000, guid: f970654126dbeb340bf326f0b0206190, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: BoringDance
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 33
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

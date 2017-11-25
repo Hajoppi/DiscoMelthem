@@ -6,8 +6,9 @@ public class DancerManager : MonoBehaviour {
     ArrayList dancers;
     public GameObject dancer;
     public GameObject score;
-	// Use this for initialization
-	void Start () {
+    public List<GameObject> dancerModels = new List<GameObject>();
+    // Use this for initialization
+    void Start () {
         dancers = new ArrayList();
         InvokeRepeating("Add", 3, 3);
 	}
@@ -22,6 +23,9 @@ public class DancerManager : MonoBehaviour {
     void Add()
     {
         GameObject d = Instantiate(dancer, new Vector3(5, 0, -9), Quaternion.identity);
+        
+        GameObject a = Instantiate(dancerModels[1], d.transform.position, d.transform.rotation);
+        a.transform.SetParent(d.transform);
         dancers.Add(d);
         d.transform.SetParent(this.transform);
     }

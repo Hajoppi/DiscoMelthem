@@ -1,0 +1,176 @@
+fileFormatVersion: 2
+guid: 70162632ba321874ea446de464164e77
+timeCreated: 1511620029
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Male_base:back
+    100002: Male_base:Base
+    100004: Male_base:chest
+    100006: Male_base:Controls
+    100008: Male_base:Head
+    100010: Male_base:hips
+    100012: Male_base:joint7
+    100014: Male_base:L_arm
+    100016: Male_base:L_ball
+    100018: Male_base:L_elbow
+    100020: Male_base:L_knee
+    100022: Male_base:L_leg
+    100024: Male_base:L_palm
+    100026: Male_base:L_palmTip
+    100028: Male_base:L_shoulder
+    100030: Male_base:L_toe
+    100032: Male_base:L_ToeTip
+    100034: Male_base:neck
+    100036: Male_base:R_arm
+    100038: Male_base:R_ball
+    100040: Male_base:R_elbow
+    100042: Male_base:R_knee
+    100044: Male_base:R_leg
+    100046: Male_base:R_palm
+    100048: Male_base:R_palmTip
+    100050: Male_base:R_shoulder
+    100052: Male_base:R_toe
+    100054: Male_base:R_ToeTip
+    100056: Male_base:Root
+    100058: //RootNode
+    400000: Male_base:back
+    400002: Male_base:Base
+    400004: Male_base:chest
+    400006: Male_base:Controls
+    400008: Male_base:Head
+    400010: Male_base:hips
+    400012: Male_base:joint7
+    400014: Male_base:L_arm
+    400016: Male_base:L_ball
+    400018: Male_base:L_elbow
+    400020: Male_base:L_knee
+    400022: Male_base:L_leg
+    400024: Male_base:L_palm
+    400026: Male_base:L_palmTip
+    400028: Male_base:L_shoulder
+    400030: Male_base:L_toe
+    400032: Male_base:L_ToeTip
+    400034: Male_base:neck
+    400036: Male_base:R_arm
+    400038: Male_base:R_ball
+    400040: Male_base:R_elbow
+    400042: Male_base:R_knee
+    400044: Male_base:R_leg
+    400046: Male_base:R_palm
+    400048: Male_base:R_palmTip
+    400050: Male_base:R_shoulder
+    400052: Male_base:R_toe
+    400054: Male_base:R_ToeTip
+    400056: Male_base:Root
+    400058: //RootNode
+    7400000: Walk
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: e2b8a94580bf0b948a08d61c6e4a253d,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
