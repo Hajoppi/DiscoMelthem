@@ -8,10 +8,11 @@ public class EquipmentScore : MonoBehaviour {
     public bool currentlyActive;
     float activeTime;
     public Renderer renderer;
+    public GameObject lightObject;
 
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         scoreValue = 0;
         activeTime = 0;
         currentlyActive = false;
@@ -34,6 +35,7 @@ public class EquipmentScore : MonoBehaviour {
         SetValue(value);
         SetActive(activeTime);
         SetAlpha(.5f);
+        ChangeLight();
     }
 
     public void DeactivateEquipment()
@@ -52,12 +54,27 @@ public class EquipmentScore : MonoBehaviour {
         Color col = renderer.material.color;
         col.a = alpha;
         renderer.material.color = col;
-        print(renderer);
+    }
+
+    public void ChangeLight()
+    {
+        float colorChangeRed = Random.Range(0f, 1f);
+        float colorChangeBlue = Random.Range(0f, 1f); ;
+        float colorChangeGreen = Random.Range(0f, 1f); ;
+        Color current = lightObject.GetComponent<Light>().color;
+        print(lightObject.GetComponent<Light>());
+        if (current != null)
+        {
+            Color newColor = new Color(colorChangeRed, colorChangeGreen, colorChangeBlue);
+            lightObject.GetComponent<Light>().color = Color.Lerp(current, newColor, 3);
+
+
+        }
     }
 
 
-	// Update is called once per frame
-	void Update () {
+    // Update is called once per frame
+    void Update () {
 		if (currentlyActive)
         {
             float newActiveTime = activeTime - Time.deltaTime;

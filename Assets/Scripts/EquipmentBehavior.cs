@@ -36,9 +36,6 @@ public class EquipmentBehavior : VRTK_InteractableObject
     {
         base.Update();
 
-        float colorChangeRed = 0;
-        float colorChangeBlue = 0;
-        float colorChangeGreen = 0;
 
         if (isBeingTouched)
         {
@@ -46,7 +43,7 @@ public class EquipmentBehavior : VRTK_InteractableObject
             if (prevControllerZ != 0)
             {
                 float diff = controllerAngle - prevControllerZ;
-
+                /*
                 if ( diff > 270 )
                 {
                     diff = 270;
@@ -55,7 +52,7 @@ public class EquipmentBehavior : VRTK_InteractableObject
                 {
                     diff = 90;
                 }
-
+                */
                 rotator.Rotate(new Vector3(diff, 0f, 0f));
                 if (score.currentlyActive)
                 {

@@ -48,6 +48,7 @@ public class Dancer : MonoBehaviour {
                     animator.SetBool("dancing", false);
                     animator.SetBool("walking", true);
                 }
+                nav.isStopped = false;
                 nav.SetDestination(barLocation);
             }
 
