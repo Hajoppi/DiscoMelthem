@@ -21,9 +21,9 @@ public class GenerateDanceFloor : MonoBehaviour {
                 tileMaterial.SetColor("_ColdColor", new Color((float)rand.NextDouble(), (float)rand.NextDouble(), (float)rand.NextDouble()));
                 float x = graphics.transform.position.x;
                 float z = graphics.transform.position.z;
-                Vector3 pos = new Vector3(x + -i * 5, 0, x+ -j * 5);
+                Vector3 pos = new Vector3(x + -i * 0.5f, 0f, x+ -j * 0.5f);
                 cube.transform.position = pos;
-                cube.transform.localScale = new Vector3(5, 1, 5);
+                cube.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
                 cube.transform.SetParent(graphics.transform, true);
                 tiles.Add(cube);
             }

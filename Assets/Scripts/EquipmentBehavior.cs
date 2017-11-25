@@ -21,14 +21,15 @@ public class EquipmentBehavior : VRTK_InteractableObject
     public override void StopUsing(VRTK_InteractUse usingObject)
     {
         base.StopUsing(usingObject);
-        spinSpeed = 0f;
         isBeingTouched = false;
+        prevControllerZ = 0;
     }
 
     protected void Start()
     {
-        rotator = GameObject.Find("Graphics").transform.Find("Cube");
+        rotator = gameObject.transform;
         isBeingTouched = false;
+        print(prevControllerZ);
         prevControllerZ = 0;
     }
 
