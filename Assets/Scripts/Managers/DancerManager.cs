@@ -23,7 +23,6 @@ public class DancerManager : MonoBehaviour {
     void Add()
     {
         GameObject d = Instantiate(dancer, new Vector3(5, 0, -9), Quaternion.identity);
-        
         GameObject a = Instantiate(dancerModels[1], d.transform.position, d.transform.rotation);
         a.transform.SetParent(d.transform);
         dancers.Add(d);
