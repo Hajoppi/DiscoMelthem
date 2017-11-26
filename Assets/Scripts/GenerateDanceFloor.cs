@@ -23,10 +23,10 @@ public class GenerateDanceFloor : MonoBehaviour
             for (int j = 0; j < 12; j++)
             {
                 Material m = new Material(tileMaterial);
+                m.SetColor("_HotColor", new Color((float)rand.NextDouble(), (float)rand.NextDouble(), (float)rand.NextDouble()));
+                m.SetColor("_ColdColor", new Color((float)rand.NextDouble(), (float)rand.NextDouble(), (float)rand.NextDouble()));
                 GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
                 cube.GetComponent<MeshRenderer>().material = m;
-                tileMaterial.SetColor("_HotColor", new Color((float)rand.NextDouble(), (float)rand.NextDouble(), (float)rand.NextDouble()));
-                tileMaterial.SetColor("_ColdColor", new Color((float)rand.NextDouble(), (float)rand.NextDouble(), (float)rand.NextDouble()));
                 float x = graphics.transform.position.x;
                 float z = graphics.transform.position.z;
                 Vector3 pos = new Vector3(x + -i * 0.5f, 0f, x + -j * 0.5f);
