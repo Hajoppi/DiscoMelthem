@@ -31,19 +31,19 @@ public class DancerManager : MonoBehaviour {
         */
     }
 
-    public void IncreaseHeat()
+    public void IncreaseHeat(float amount)
     {
         foreach(GameObject d in dancers)
         {
-            d.GetComponent<Dancer>().Adder();
+            d.GetComponent<Dancer>().Adder(amount);
         }
     }
 
-    public void DecreaseHeat()
+    public void DecreaseHeat(float amount)
     {
         foreach(GameObject d in dancers)
         {
-            d.GetComponent<Dancer>().Reducer();
+            d.GetComponent<Dancer>().Reducer(amount);
         }
     }
 

@@ -8,7 +8,6 @@ public class Dancer : MonoBehaviour {
     Vector3 barLocation = new Vector3(-2, 0, -4);
     Vector3 danceFloorLocation = new Vector3(0.5f, 0, 1.5f);
     UnityEngine.AI.NavMeshAgent nav;
-    float offset = 0.05f;
     // Use this for initialization
     void Start () {
         nav = GetComponent<UnityEngine.AI.NavMeshAgent>();
@@ -18,18 +17,18 @@ public class Dancer : MonoBehaviour {
             animator.SetBool("walking", true);
         }
 	}
-	public void Adder()
+	public void Adder(float amount)
     {
-        heat += offset;
+        heat += amount;
         if (heat > 1.5f)
         {
             heat = 1.5f;
         }
     }
 
-    public void Reducer()
+    public void Reducer(float amount)
     {
-        heat -= 2 * offset;
+        heat -= 2 * amount;
         if (heat < 0f)
         {
             heat = 0f;

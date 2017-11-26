@@ -28,7 +28,7 @@ public class MovementScore : MonoBehaviour {
         accumulator += (distance + (leftVelocity + rightVelocity)) * Time.deltaTime * 2;
         if (accumulator > 1)
         {
-            scoreManager.SetScore(scoreManager.GetScore() + 1);
+            scoreManager.AddScore(1, false);
             accumulator = 0;
         }
         

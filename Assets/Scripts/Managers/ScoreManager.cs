@@ -47,8 +47,9 @@ public class ScoreManager : MonoBehaviour {
         {
             dancerManager.Add();
         }
-        dancerManager.IncreaseHeat();
-        danceFloor.heat += 0.1f;
+        dancerManager.IncreaseHeat((float) amount * 0.0025f);
+        danceFloor.heat += 0.0005f * (float) amount;
+        print(danceFloor.heat);
         foreach (Material m in decorations)
         {
             if(m.GetFloat("_Heat") +0.1f > 1)
@@ -77,8 +78,8 @@ public class ScoreManager : MonoBehaviour {
         {
             SetScore(score - amount);
         }
-        dancerManager.DecreaseHeat();
-        danceFloor.heat -= 0.1f;
+        dancerManager.DecreaseHeat((float) amount * 0.0025f);
+        danceFloor.heat -= 0.0005f * (float)amount;
         foreach (Material m in decorations)
         {
             if(m.GetFloat("_Heat")- 0.1f < 0)
