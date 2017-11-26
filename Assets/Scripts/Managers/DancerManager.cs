@@ -5,6 +5,7 @@ using UnityEngine;
 public class DancerManager : MonoBehaviour {
     List<GameObject> dancers = new List<GameObject>();
     public GameObject dancer;
+    public GameObject iceCube;
     //public GameObject scoreObject;
     //ScoreManager score;
     //int lastScore;
@@ -52,7 +53,9 @@ public class DancerManager : MonoBehaviour {
         print("ADD");
         GameObject d = Instantiate(dancer, new Vector3(5, 0, -9), Quaternion.identity);
         GameObject a = Instantiate(dancerModels[Random.Range(0, dancerModels.Count)], d.transform.position, d.transform.rotation);
+        GameObject cube = Instantiate(iceCube, d.transform.position, d.transform.rotation);
         a.transform.SetParent(d.transform);
+        cube.transform.SetParent(d.transform);
         dancers.Add(d);
         d.transform.SetParent(this.transform);
     }

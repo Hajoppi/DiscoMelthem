@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class Dancer : MonoBehaviour {
     private float heat = 0;
-    private float startTime = Time.time;
+    private float startTime;
     Animator animator;
-    List<Vector3> boringLocations = new List<Vector3>();
+    List<Vector3> boringLocations;
     private Vector3 targetLocation = new Vector3(0, 0, 0);
     private Vector3 endLocation = new Vector3(4, 0, -10);
     Vector3 danceFloorLocation = new Vector3(0.5f, 0, 1.5f);
     UnityEngine.AI.NavMeshAgent nav;
     // Use this for initialization
     void Start () {
+        startTime = Time.time;
+        boringLocations = new List<Vector3>();
         boringLocations.Add(new Vector3(-2, 0, -4));
         boringLocations.Add(new Vector3(0, 0, 6));
         boringLocations.Add(new Vector3(-4, 0, 5));
@@ -50,6 +52,10 @@ public class Dancer : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        if (transform.Find("IceCube_01(Clone)"))
+        {
+            transform.Find("IceCube_01(Clone)").localScale = new Vector3(.7f - heat, .7f - heat, .7f - heat);
+        }
         if (heat <= 0.2f)
         {
             if(Time.time - startTime > 30)
@@ -57,8 +63,8 @@ public class Dancer : MonoBehaviour {
                 targetLocation = endLocation;
                 if(Vector3.Distance(this.transform.position, targetLocation) < 1)
                 {
-                    Destroy(gameObject);
-                    Destroy(this);
+                   // Destroy(gameObject);
+                   // Destroy(this);
                 }
             }
             if(Vector3.Distance(this.transform.position, targetLocation) < 1)
