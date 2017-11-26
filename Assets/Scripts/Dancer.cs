@@ -4,12 +4,20 @@ using UnityEngine;
 
 public class Dancer : MonoBehaviour {
     private float heat = 0;
+    private float startTime = Time.time;
     Animator animator;
-    Vector3 barLocation = new Vector3(-2, 0, -4);
+    List<Vector3> boringLocations = new List<Vector3>();
+    private Vector3 targetLocation = new Vector3(0, 0, 0);
+    private Vector3 endLocation = new Vector3(4, 0, -10);
     Vector3 danceFloorLocation = new Vector3(0.5f, 0, 1.5f);
     UnityEngine.AI.NavMeshAgent nav;
     // Use this for initialization
     void Start () {
+        boringLocations.Add(new Vector3(-2, 0, -4));
+        boringLocations.Add(new Vector3(0, 0, 6));
+        boringLocations.Add(new Vector3(-4, 0, 5));
+        boringLocations.Add(new Vector3(7, 0, 0));
+        targetLocation = boringLocations[Random.Range(0, boringLocations.Count)];
         nav = GetComponent<UnityEngine.AI.NavMeshAgent>();
         animator = GetComponentInChildren<Animator>();
         if(animator != null)
@@ -19,10 +27,15 @@ public class Dancer : MonoBehaviour {
 	}
 	public void Adder(float amount)
     {
-        heat += amount;
-        if (heat > 1.5f)
+
+        if(targetLocation != endLocation)
+
         {
-            heat = 1.5f;
+            heat += amount;
+            if (heat > 1.5f)
+            {
+                heat = 1.5f;
+            }
         }
     }
 
@@ -39,7 +52,16 @@ public class Dancer : MonoBehaviour {
     {
         if (heat <= 0.2f)
         {
-            if(Vector3.Distance(this.transform.position, barLocation) < 1)
+            if(Time.time - startTime > 30)
+            {
+                targetLocation = endLocation;
+                if(Vector3.Distance(this.transform.position, targetLocation) < 1)
+                {
+                    Destroy(gameObject);
+                    Destroy(this);
+                }
+            }
+            if(Vector3.Distance(this.transform.position, targetLocation) < 1)
             {
                 nav.isStopped = true;
                 if(animator != null)
@@ -56,7 +78,7 @@ public class Dancer : MonoBehaviour {
                     animator.SetBool("walking", true);
                 }
                 nav.isStopped = false;
-                nav.SetDestination(barLocation);
+                nav.SetDestination(targetLocation);
             }
 
         }
