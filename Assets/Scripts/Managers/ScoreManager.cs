@@ -10,12 +10,15 @@ public class ScoreManager : MonoBehaviour {
     public GameObject dancerManagerObject;
     public GameObject danceFloorObject;
     public GameObject[] room;
+    public GameObject GameOverCanvas;
+    float timer;
     List<Material> decorations = new List<Material>();
     GenerateDanceFloor danceFloor;
     DancerManager dancerManager;
 
 	// Use this for initialization
 	void Awake () {
+        timer = 0;
         score = 0;
         danceFloor = danceFloorObject.GetComponent<GenerateDanceFloor>();
         dancerManager = dancerManagerObject.GetComponent<DancerManager>();
@@ -27,8 +30,27 @@ public class ScoreManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        scoreText.text = "Score: " + score;
+        if (timer >= 220)
+        {
+            GameOver();
+            StartCoroutine(WaitForQuit());
+        }
+        timer += Time.deltaTime;
+        scoreText.text = "HEAT: " + score;
 	}
+
+    IEnumerator WaitForQuit()
+    {
+        yield return new WaitForSeconds(5);
+        Application.Quit();
+    }
+
+    void GameOver()
+    {
+        GameOverCanvas.SetActive(true);
+        string t = "Final Heat: " + score;
+        GameObject.FindWithTag("GameOverScore").GetComponent<Text>().text = t;
+    }
 
     public void SetScore(int newScore)
     {

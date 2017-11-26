@@ -36,7 +36,7 @@ public class EquipmentManager : MonoBehaviour {
     {
         EquipmentScore equipment = equipmentList[Random.Range(0, equipmentList.Count)].GetComponent<EquipmentScore>();
         int value = 20;
-        float activeTime = 2;
+        float activeTime = 2.5f;
 
         equipment.ActivateEquipment(value, activeTime);
         cycleTimer = 0;

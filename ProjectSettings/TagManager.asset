@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ScoreText
   - scoreManager
+  - GameOverScore
   layers:
   - Default
   - TransparentFX

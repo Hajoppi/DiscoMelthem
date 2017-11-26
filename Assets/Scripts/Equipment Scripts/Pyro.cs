@@ -5,34 +5,45 @@ using VRTK;
 
 public class Pyro : VRTK_InteractableObject
 {
-    bool isBeingTouched;
-    public GameObject button;
     public GameObject effect;
+    public EquipmentScore score;
+    bool isBeingTouched;
 
     public override void StartUsing(VRTK_InteractUse usingObject)
     {
         base.StartUsing(usingObject);
+        effect.SetActive(true);
+        ParticleSystem ps = effect.GetComponent<ParticleSystem>();
+        var main = ps.main;
+        main.loop = true;
         isBeingTouched = true;
     }
 
     public override void StopUsing(VRTK_InteractUse usingObject)
     {
         base.StopUsing(usingObject);
+        effect.SetActive(false);
         isBeingTouched = false;
     }
 
     protected void Start()
     {
+        effect.SetActive(false);
         isBeingTouched = false;
     }
 
     protected override void Update()
     {
-        base.Update();
         if (isBeingTouched)
         {
-            effect.SetActive(true);
+            if (score.currentlyActive)
+            {
+                ScoreManager scoreManager = GameObject.FindWithTag("scoreManager").GetComponent<ScoreManager>();
+                scoreManager.AddScore(score.scoreValue, true);
+                score.DeactivateEquipment();
+                score.currentlyActive = false;
+            }
         }
-
+        base.Update();
     }
 }

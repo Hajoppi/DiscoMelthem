@@ -16,6 +16,7 @@ public class EquipmentBehavior : VRTK_InteractableObject
         base.StartUsing(usingObject);
         spinSpeed = 360f;
         isBeingTouched = true;
+        print("USING");
     }
 
     public override void StopUsing(VRTK_InteractUse usingObject)
