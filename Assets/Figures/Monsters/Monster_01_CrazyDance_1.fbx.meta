@@ -1,0 +1,164 @@
+fileFormatVersion: 2
+guid: cd5a8d5a9cd8a5241a86a422cc3afd85
+timeCreated: 1511642392
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: monster_01_Source:back_01
+    100004: monster_01_Source:back_02
+    100006: monster_01_Source:body
+    100008: monster_01_Source:head
+    100010: monster_01_Source:head_tip
+    100012: monster_01_Source:L_arm
+    100014: monster_01_Source:L_Ball
+    100016: monster_01_Source:L_ear
+    100018: monster_01_Source:l_ear_tip
+    100020: monster_01_Source:L_feet
+    100022: monster_01_Source:L_hand
+    100024: monster_01_Source:L_knee
+    100026: monster_01_Source:L_leg
+    100028: monster_01_Source:neck
+    100030: monster_01_Source:R_arm
+    100032: monster_01_Source:R_Ball
+    100034: monster_01_Source:R_ear
+    100036: monster_01_Source:r_ear_tip
+    100038: monster_01_Source:R_feet
+    100040: monster_01_Source:R_hand
+    100042: monster_01_Source:R_knee
+    100044: monster_01_Source:R_leg
+    100046: monster_01_Source:root
+    400000: //RootNode
+    400002: monster_01_Source:back_01
+    400004: monster_01_Source:back_02
+    400006: monster_01_Source:body
+    400008: monster_01_Source:head
+    400010: monster_01_Source:head_tip
+    400012: monster_01_Source:L_arm
+    400014: monster_01_Source:L_Ball
+    400016: monster_01_Source:L_ear
+    400018: monster_01_Source:l_ear_tip
+    400020: monster_01_Source:L_feet
+    400022: monster_01_Source:L_hand
+    400024: monster_01_Source:L_knee
+    400026: monster_01_Source:L_leg
+    400028: monster_01_Source:neck
+    400030: monster_01_Source:R_arm
+    400032: monster_01_Source:R_Ball
+    400034: monster_01_Source:R_ear
+    400036: monster_01_Source:r_ear_tip
+    400038: monster_01_Source:R_feet
+    400040: monster_01_Source:R_hand
+    400042: monster_01_Source:R_knee
+    400044: monster_01_Source:R_leg
+    400046: monster_01_Source:root
+    7400000: M1_CrazyDance_1
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: M1_CrazyDance_1
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 6b095722c9866ff4b9194d49713f0dd0,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

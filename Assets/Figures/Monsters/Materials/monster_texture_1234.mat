@@ -6,9 +6,9 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: mat_female
+  m_Name: monster_texture_1234
   m_Shader: {fileID: 4800000, guid: c941ffa640df80a4eb89c893a1d269fb, type: 3}
-  m_ShaderKeywords: _USETILES_ON
+  m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -19,7 +19,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BasicTexture:
-        m_Texture: {fileID: 2800000, guid: e42aa427c91df6347abe862211197363, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8132834a571dff24991a9f5d4b44db53, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -63,11 +63,10 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Gloss: 0.216
+    - _Gloss: 0.5
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
-    - _GlowPower: 1
     - _GradientPower: 0
     - _Heat: 0
     - _Metallic: 0
@@ -75,16 +74,15 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
-    - _SpecPower: 0.181
+    - _SpecPower: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _TileSelect: 0
+    - _TileSelect: 3
     - _UVSec: 0
-    - _UseTiles: 1
+    - _UseTiles: 0
     - _ZWrite: 1
     m_Colors:
     - _ColdColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.8, g: 0.8, b: 0.8, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
     - _HotColor: {r: 1, g: 1, b: 1, a: 1}
-    - _SpecColor: {r: 0.1102941, g: 0.1102941, b: 0.1102941, a: 1}

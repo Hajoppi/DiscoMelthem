@@ -1,0 +1,160 @@
+fileFormatVersion: 2
+guid: 9866c2f5304bd7548b1519382b0925dd
+timeCreated: 1511642409
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: monster_03_Source:joint1
+    100004: monster_03_Source:joint2
+    100006: monster_03_Source:joint3
+    100008: monster_03_Source:joint4
+    100010: monster_03_Source:L_ball
+    100012: monster_03_Source:L_ear_A
+    100014: monster_03_Source:L_ear_B
+    100016: monster_03_Source:L_ear_C
+    100018: monster_03_Source:L_ear_TIP
+    100020: monster_03_Source:L_feet
+    100022: monster_03_Source:L_knee
+    100024: monster_03_Source:L_leg
+    100026: monster_03_Source:R_ball
+    100028: monster_03_Source:R_ear_A
+    100030: monster_03_Source:R_ear_B
+    100032: monster_03_Source:R_ear_C
+    100034: monster_03_Source:R_ear_TIP
+    100036: monster_03_Source:R_feet
+    100038: monster_03_Source:R_knee
+    100040: monster_03_Source:R_leg
+    100042: monster_03_Source:ROOT
+    400000: //RootNode
+    400002: monster_03_Source:joint1
+    400004: monster_03_Source:joint2
+    400006: monster_03_Source:joint3
+    400008: monster_03_Source:joint4
+    400010: monster_03_Source:L_ball
+    400012: monster_03_Source:L_ear_A
+    400014: monster_03_Source:L_ear_B
+    400016: monster_03_Source:L_ear_C
+    400018: monster_03_Source:L_ear_TIP
+    400020: monster_03_Source:L_feet
+    400022: monster_03_Source:L_knee
+    400024: monster_03_Source:L_leg
+    400026: monster_03_Source:R_ball
+    400028: monster_03_Source:R_ear_A
+    400030: monster_03_Source:R_ear_B
+    400032: monster_03_Source:R_ear_C
+    400034: monster_03_Source:R_ear_TIP
+    400036: monster_03_Source:R_feet
+    400038: monster_03_Source:R_knee
+    400040: monster_03_Source:R_leg
+    400042: monster_03_Source:ROOT
+    7400000: M3_Frozen
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: M3_Frozen
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 38
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 748d009d345aad0468db5ada3943f5a4,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

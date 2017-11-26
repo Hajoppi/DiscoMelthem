@@ -9,6 +9,7 @@ public class EquipmentScore : MonoBehaviour {
     float activeTime;
     public Renderer renderer;
     public GameObject lightObject;
+    public ParticleSystem feedback;
 
 
     // Use this for initialization
@@ -34,9 +35,11 @@ public class EquipmentScore : MonoBehaviour {
     {
         SetValue(value);
         SetActive(activeTime);
-        SetAlpha(.8f);
-        Color emissionColor = Color.yellow;
-        renderer.material.EnableKeyword("_EMISSION");
+        //SetAlpha(.8f);
+        //Color emissionColor = Color.yellow;
+        //renderer.material.EnableKeyword("_EMISSION");
+        feedback.gameObject.SetActive(true);
+
         ChangeLight();
     }
 
@@ -45,6 +48,7 @@ public class EquipmentScore : MonoBehaviour {
         SetValue(0);
         SetAlpha(0f);
         renderer.material.DisableKeyword("_EMISSION");
+        feedback.gameObject.SetActive(false);
     }
 
     int GetValue ()

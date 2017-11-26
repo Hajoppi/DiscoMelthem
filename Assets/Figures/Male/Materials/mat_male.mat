@@ -8,7 +8,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: mat_male
   m_Shader: {fileID: 4800000, guid: c941ffa640df80a4eb89c893a1d269fb, type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: _USETILES_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -19,7 +19,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BasicTexture:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: e42aa427c91df6347abe862211197363, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -68,6 +68,7 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 1
     - _GlowPower: 1
+    - _GradientPower: 0
     - _Heat: 0
     - _Metallic: 0
     - _Mode: 0
@@ -77,11 +78,13 @@ Material:
     - _SpecPower: 0.181
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _TileSelect: 0
     - _UVSec: 0
+    - _UseTiles: 1
     - _ZWrite: 1
     m_Colors:
-    - _ColdColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _ColdColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 0.8, g: 0.8, b: 0.8, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
-    - _HotColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _HotColor: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 0.1102941, g: 0.1102941, b: 0.1102941, a: 1}
