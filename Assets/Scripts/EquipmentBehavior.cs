@@ -48,7 +48,7 @@ public class EquipmentBehavior : VRTK_InteractableObject
                 if (score.currentlyActive)
                 {
                     ScoreManager scoreManager = GameObject.FindWithTag("scoreManager").GetComponent<ScoreManager>();
-                    scoreManager.AddScore(score.scoreValue);
+                    scoreManager.AddScore(score.scoreValue, true);
                     score.DeactivateEquipment();
                     score.currentlyActive = false;
                 }

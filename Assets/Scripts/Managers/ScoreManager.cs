@@ -40,10 +40,13 @@ public class ScoreManager : MonoBehaviour {
         return score;
     }
 
-    public void AddScore (int amount)
+    public void AddScore (int amount, bool addDancer)
     {
         SetScore(amount + score);
-        dancerManager.Add();
+        if (addDancer)
+        {
+            dancerManager.Add();
+        }
         dancerManager.IncreaseHeat();
         danceFloor.heat += 0.1f;
         foreach (Material m in decorations)
